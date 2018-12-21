@@ -1,0 +1,110 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+body
+{
+    background: darkseagreen;
+}
+#contain
+{
+    width:700px;
+    margin: auto;
+    position: relative;
+}
+#head
+{
+    width:100%;
+    line-height:45px;
+    background: white;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+#head a
+{
+    font-size: inherit;
+    margin-left: 20px;
+}
+#return
+{
+    display: none;
+}
+#head span
+{
+    margin-left: 280px;
+}
+#content
+{
+    width:100%;
+    height:400px;
+    background: white;
+    margin: auto;
+}
+table
+{
+    width:90%;
+    height:400px;
+    margin-left:20px;
+}
+tr{
+    width: 100%;
+    height:45px;
+}
+td:nth-child(2n-1)
+{
+    width: 16%;
+    height:45px;
+}
+td:nth-child(2n)
+{
+    width: 85%;
+    height:45px;
+}
+input
+{
+    line-height: 40px;
+    border: 0px;
+}
+.btn-register
+{
+    width:680px;
+    margin: auto;
+}
+.btn_load
+{
+    margin-top: 10px;
+    width: 100%;
+    line-height: 50px;
+    border-radius: 25px;
+    color: white;
+}
+#btn_register
+{
+    background:#d9a960 ;
+}
+#btn_ok
+{
+    background: #57e52c;
+}
+#foot.hide
+{
+    display: none;
+}
+/*显示提示信息设置*/
+#foot.show
+{
+    width: 680px;
+    line-height: 50px;
+    /*position: absolute;*/
+    margin-top:10px;
+    background: #ffe500;
+    color: black;
+    display: block;
+    border-radius: 25px;
+    text-align: center;
+    margin-left: 10px;
+}

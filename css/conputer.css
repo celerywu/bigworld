@@ -1,0 +1,108 @@
+/*适配手机分辨率*/
+@media screen and (max-width:1400px) and  (min-width: 400px) {
+    #contain {
+        overflow: hidden;
+    }
+
+    #content {
+        width: 100%;
+        height: 100%;
+    }
+
+    #select_language {
+        width: 100px;
+        height: 36px;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+    }
+
+    #select_language.chinese {
+        width: 100px;
+        height: 36px;
+        font-size: 16px;
+    }
+
+    #select_language ul {
+        width: 100px;
+        position: absolute;
+        top: 60px;
+    }
+
+    #select_language li {
+        width: 100px;
+        height: 40%;
+        font-size: 16px;;
+    }
+
+    #select {
+        height: 110px;
+        position: absolute;
+        top: 60%;
+        left: 44%;
+        width: 15%;
+    }
+
+    #select .exdefault {
+        font-size: 16px;
+        line-height: 30%;
+        width: 110px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #select ul {
+        width: 100%;
+        height: 100%;
+    }
+
+    #select li {
+        font-size: 16px;
+        line-height: 30%;
+        width: 110px;
+        padding: 20px;
+    }
+
+    #btb_btn {
+        width: 450px;
+        /*height:80px;*/
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        z-index: 2;
+        display: none;
+        font-size: 18px;
+        height: 50px;
+        background: yellow;
+    }
+
+    #btb_btn input[name="btb"] {
+        height: 46px;
+        font-size: 18px;
+    }
+
+    #btn_logon {
+        line-height: 50px;
+        font-size: 18px;
+        background: #ffe500;
+    }
+
+    #IDload {
+        position: absolute;
+        top: 45%;
+        left: 26%;
+        width: 300px;
+        height: 180px;
+    }
+
+    input[name="ID"] {
+        width: 99%;
+        line-height: 60px;
+        overflow: hidden;
+        color: black;
+    }
+
+    #btn_logon {
+        height: 30px;
+    }
+}
