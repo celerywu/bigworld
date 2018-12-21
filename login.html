@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Big world</title>
+        <link rel="stylesheet" href="css/login.css"/>
+        <link rel="script" href="css/conputer.css"/>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#light").animate({left:"100%"},1000);
+                //显示/隐藏输入法切换
+                $(".chinese").click(function(){
+                    $("li.language_1").toggleClass("open");
+                    $("li.language_2").toggleClass("open");
+                    /*$("#select_language ul").slideDown();*/
+                });
+                //把class为language_1的赋值给class为chinese
+                $(".language_1").click(function () {
+                    var ht_1=$(".language_1").html();
+                    $(".chinese").html(ht_1);
+                    $("li.language_1").removeClass("open");
+                    $("li.language_2").removeClass("open");
+                });
+                //把class为language_2的赋值给class为chinese
+                $(".language_2").click(function () {
+                    var ht_2=$("li.language_2").html();
+                    $(".chinese").html(ht_2);
+                    $("li.language_1").removeClass("open");
+                    $("li.language_2").removeClass("open");
+                });
+                //隐藏/显示登陆方式
+                $(".exdefault").click(function () {
+                    $("li.default").toggleClass("open_two");
+                    $("li.default_1").toggleClass("open_two");
+                    $("li.default_2").toggleClass("open_two");
+                });
+
+                $(".default").click(function () {
+                    $("li.default").removeClass("open_two");
+                    $("li.default_1").removeClass("open_two");
+                    $("li.default_2").removeClass("open_two");
+                    $("#cover").fadeIn();
+                    $("#btb_btn").fadeIn();
+                });
+
+                $("#cover").click(function () {
+                    $("#IDload").fadeOut();
+                    $("#cover").fadeOut();
+                    $("#btb_btn").fadeOut();
+                })
+
+                $(".default_1").click(function () {
+                    $("li.default").removeClass("open_two");
+                    $("li.default_1").removeClass("open_two");
+                    $("li.default_2").removeClass("open_two");
+                    $("#cover").fadeIn();
+                    $("#IDload").fadeIn();
+                });
+
+                $(".default_2").click(function () {
+                    $("li.default").removeClass("open_two");
+                    $("li.default_1").removeClass("open_two");
+                    $("li.default_2").removeClass("open_two");
+                    $(location).attr("href","register.html")
+                })
+                $("#btn_logon").click(function() {
+                    $(location).attr("href","#");
+                    event.stopPropagation();
+                })
+                $("#btn_logon_1").click(function () {
+
+                    $(location).attr("href","#");
+                    event.stopPropagation();
+                })
+            });
+            //var cover=document.getElementById("cover");
+            //var btb_btn=document.getElementById("btb_btn");
+            //function fadeout()
+            //{
+            //   cover.fadeOut();
+            //   btb_btn.fadeOut();
+            //}
+            //setInterval(fadeout,100);
+        </script>
+    </head>
+    <body>
+
+            <div id="content">
+
+                <div id="select_language">
+                    <div class="chinese">简体中文</div>
+                    <ul>
+                        <li class="language_1">简体中文</li>
+                        <li class="language_2">English</li>
+                    </ul>
+                </div>
+
+                <div id="select">
+                    <div class="exdefault">登&nbsp&nbsp&nbsp&nbsp陆</div>
+                    <ul>
+                        <li class="default">钱包地址登录</li>
+                        <li class="default_1">用户名或UID登录</li>
+                        <li class="default_2">注&nbsp&nbsp&nbsp&nbsp册</li>
+                    </ul>
+                </div>
+
+                <div id="light">
+                    <img src="img/light3.png">
+                </div>
+
+                <div id="cover"></div>
+
+                <div id="btb_btn">
+                    <input name="btb" placeholder="请输入比特币钱包号"/>
+                    <div id="btn_logon" class="input">登陆</div>
+                </div>
+
+                <div id="IDload">
+                    <input name="ID" placeholder="输入用户名/id"/>
+                    <input name="ID" placeholder="输入登陆密码"/>
+                    <div id="btn_logon_1">登陆</div>
+                </div>
+            </div>
+
+    </body>
+</html>
